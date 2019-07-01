@@ -29,7 +29,7 @@ public class Table extends ASTNodeAccessImpl implements FromItem, MultiPartName 
     private static final int DATABASE_IDX = 2;
     private static final int SERVER_IDX = 3;
 
-    private List<String> partItems = new ArrayList<>();
+    private List<String> partItems = new ArrayList<String>();
 
     private Alias alias;
     private Pivot pivot;
@@ -54,7 +54,7 @@ public class Table extends ASTNodeAccessImpl implements FromItem, MultiPartName 
     }
 
     public Table(List<String> partItems) {
-        this.partItems = new ArrayList<>(partItems);
+        this.partItems = new ArrayList<String>(partItems);
         Collections.reverse(this.partItems);
     }
 

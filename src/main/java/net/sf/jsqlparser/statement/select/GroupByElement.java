@@ -16,7 +16,7 @@ import net.sf.jsqlparser.expression.operators.relational.ExpressionList;
 
 public class GroupByElement {
 
-    private List<Expression> groupByExpressions = new ArrayList<>();
+    private List<Expression> groupByExpressions = new ArrayList<Expression>();
     private List groupingSets = new ArrayList();
 
     public void accept(GroupByVisitor groupByVisitor) {

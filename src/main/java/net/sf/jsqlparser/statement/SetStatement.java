@@ -15,7 +15,7 @@ import net.sf.jsqlparser.expression.Expression;
 
 public final class SetStatement implements Statement {
 
-    private final List<NameExpr> values = new ArrayList<>();
+    private final List<NameExpr> values = new ArrayList<NameExpr>();
 
     public SetStatement(String name, Expression expression) {
         add(name, expression, true);
